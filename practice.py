@@ -20,3 +20,13 @@ dongjun = {
 print(dongjun)
 dongjun["handsome"] = True
 print(dongjun)
+
+def say_Hello(who): 
+    print("Hello", who)
+say_Hello("Dongjun")
+
+def say(name, age) :
+    return f"Hello {name} you are {age} years old"
+hello = say("dongjun", "23")
+print(hello)
+

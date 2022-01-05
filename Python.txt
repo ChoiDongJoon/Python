@@ -1,3 +1,4 @@
 python 
-list - 수정 가능 mutable
-tuple - 수정 불가능 immutable
+list - 수정 가능 mutable [ ]
+tuple - 수정 불가능 immutable ( )
+dictionary - { } 변수명에 큰따옴표, = 대신 :
