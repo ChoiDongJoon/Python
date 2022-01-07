@@ -2,3 +2,10 @@ python
 list - 수정 가능 mutable [ ]
 tuple - 수정 불가능 immutable ( )
 dictionary - { } 변수명에 큰따옴표, = 대신 :
+
+days = ["Mon", "Tue", "Wed", "Thur", "Fri"]
+
+for day in days:
+    print(day)
+
+from math import ceil, fsum 이렇게 쓸 것만 import 할 수 있음.
