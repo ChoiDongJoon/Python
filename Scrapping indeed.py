@@ -1,5 +1,14 @@
-import requests
+from indeed import extract_indeed_pages, extract_indeed_jobs
 
-indeed_result = requests.get("https://kr.indeed.com/jobs?q=python&limit=50")
 
-print(indeed_result.text)
+
+last_indeed_pages = extract_indeed_pages()
+
+print(last_indeed_pages)
+
+extract_indeed_jobs(last_indeed_pages)
+
+#ddsdad
+
+
+
