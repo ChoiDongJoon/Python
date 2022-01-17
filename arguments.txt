@@ -1,0 +1,7 @@
+arguments
+
+positional arguments : 순서대로 있는 값. 무한으로 쓰고 싶을 때- *args . tuple ()
+
+keyword arguments : 변수명 = 값. 무한으로 쓰고 싶을 때- **kwargs . ditionary {}
+
+ex) def plus(a, b, *args, **kwargs):
