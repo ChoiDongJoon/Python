@@ -1,8 +1,4 @@
 class Car():
-    wheels = 4
-    doors = 4
-    windows = 4
-    seats = 4
     def start(self):
         print(self.doors)
         print("I started") #method는 class 안에 있는 function
@@ -14,17 +10,29 @@ class Car():
         self.seats = 4
         self.color = kwargs.get("color", "black")
         self.price = kwargs.get("price", "$20")
+    def __str__(self):
+        return f"Car with {self.wheels} wheels"
+    
+class Convertible(Car): #extending
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.time = kwargs.get("time",10)
+    #super는 부모클래스를 호출하는 함수 
+    """ def __init__(self, **kwargs):
+        self.time = kwargs.get("time",10) -> override라서 wheels doors ... 사용 불가"""
+    def take_off(self):
+        return "taking off"
 
-
+    def __str__(self): #override (재정의)
+        return f"Car with no roof" 
+    
 #instance
-porche = Car(color = "Green", price = "$40")
+porche = Convertible(color = "Green", price = "$40")
 porche.color = "Red"
 porche.start()
 print(porche.color, porche.price)
+porche.take_off()
 
-ferrari = Car()
-ferrari.color = "Yellow"
-print(ferrari.color, ferrari.price)
 
 mini = Car()
 mini.color = "White"
